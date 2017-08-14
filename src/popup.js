@@ -1,8 +1,8 @@
 import 'babel-polyfill';
 import { render, h } from 'preact';
 import withCurrentUser from './containers/withCurrentUser';
-import RecentBookmarks from './containers/RecentBookmarks';
+import BookmarkForm from './components/BookmarkForm';
 
-const Root = withCurrentUser(RecentBookmarks);
+const Root = withCurrentUser(BookmarkForm);
 
 render(<Root />, document.body);

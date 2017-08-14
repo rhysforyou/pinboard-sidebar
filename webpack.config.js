@@ -1,7 +1,10 @@
 const path = require('path');
 
 module.exports = {
-  entry: { 'sidebar/panel': ['./src/panel.js'] },
+  entry: {
+    'sidebar/panel': ['./src/panel.js'],
+    'popup/popup': ['./src/popup.js']
+  },
   output: {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist')
