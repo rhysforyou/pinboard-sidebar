@@ -39,7 +39,7 @@ export default class CurrentUser extends Component {
       return <RecentBookmarks authToken={this.state.authToken} />;
     } else {
       return (
-        <div>
+        <div className="no-content">
           <p>Set up your auth token on the extension options page</p>
           <button onClick={() => browser.runtime.openOptionsPage()}>
             Open Options
