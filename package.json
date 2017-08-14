@@ -1,6 +1,6 @@
 {
   "name": "pinboard-sidebar",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "A Pinboard extension for Firefox",
   "scripts": {
     "build": "webpack",
