@@ -5,6 +5,8 @@
   "scripts": {
     "build": "webpack",
     "build:watch": "webpack --watch",
+    "build:extension": "cd dist && web-ext build",
+    "sign": "cd dist && web-ext sign --api-key=$AMO_JWT_ISSUER --api-secret=$AMO_JWT_SECRET",
     "start": "cd dist && web-ext run --start-url 'about:debugging'",
     "start:nightly": "cd dist && web-ext run --firefox nightly --start-url 'about:debugging' --verbose"
   },

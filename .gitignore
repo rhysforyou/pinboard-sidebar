@@ -60,3 +60,6 @@ typings/
 # Built JS
 *.bundle.js
 *.bundle.js.map
+
+# web-ext
+dist/web-ext-artifacts
