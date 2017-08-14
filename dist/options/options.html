@@ -3,18 +3,48 @@
 <head>
   <meta charset="utf-8">
   <style media="screen">
-    .input-group {
+    form {
       display: grid;
-      grid-template-columns: 150px 1fr;
-      grid-gap: 0.5rem 1rem;
+      grid-template-columns: max-content 1fr;
+      grid-gap: 0.5rem;
       margin-bottom: 1rem;
     }
-    .input-group label {
+
+    form label {
       text-align: right;
+      line-height: 26px;
+      vertical-align: bottom;
+    }
+
+    .actions {
+      grid-column: 2 / 3;
     }
 
     button {
+      background-color: #fafafc;
+      border: 1px solid #c1c1c1;
+      font-size: 1rem;
+      padding: 0.4rem 1rem;
       float: right;
+      margin-left: 0.5rem;
+    }
+
+    input[type='text'] {
+      border: 1px solid #c1c1c1;
+      padding: 0.4rem;
+      font-size: 1rem;
+    }
+
+    input[type='text']:focus {
+      border: 1px solid #0a84ff;
+    }
+
+    button:hover {
+      background-color: #ebebeb;
+    }
+
+    button:active {
+      background-color: #dadada;
     }
 
     span.hint {
@@ -26,12 +56,13 @@
 </head>
 <body>
   <form>
-    <div class="input-group">
       <label>Pinboard API Token</label>
       <input type="text" id="auth-token" >
       <span class="hint">You can find this on your <a href="https://pinboard.in/settings/password">settings page</a></span>
-    </div>
-      <button type="submit">Save</button>
+      <div class="actions">
+        <button type="submit">Save</button>
+        <button id="reset-button">Cancel</button>
+      </div>
   </form>
   <script src="options.js"></script>
 </body>

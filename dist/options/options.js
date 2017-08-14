@@ -13,3 +13,6 @@ function restoreOptions() {
 
 document.addEventListener('DOMContentLoaded', restoreOptions);
 document.querySelector('form').addEventListener('submit', saveOptions);
+document
+  .getElementById('reset-button')
+  .addEventListener('click', restoreOptions);
