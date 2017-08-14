@@ -35,6 +35,7 @@ input[type='text'], textarea {
   border: 1px solid #c1c1c1;
   padding: 0.4rem;
   font-size: 1rem;
+  resize: none;
 }
 
 input[type='text']:focus, textarea:focus {
