@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Pinboard Sidebar",
-  "version": "0.1",
+  "version": "0.2.0",
   "description": "Your pinboard.in bookmarks. in a sidebar",
   "icons": {
     "48": "icons/extension.png",
