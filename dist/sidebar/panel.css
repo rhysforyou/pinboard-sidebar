@@ -1,0 +1,36 @@
+a {
+  text-decoration: none;
+}
+
+article.bookmark {
+  padding: 1rem;
+}
+
+article.bookmark .description {
+  margin: 0 0 0.5rem;
+  font-size: 1.2rem;
+  font-weight: lighter;
+}
+
+article.bookmark.toread a,
+article.bookmark.toread a:visited {
+  color: #a51;
+}
+
+article.bookmark .extended {
+  display: block;
+  line-height: 1.2rem;
+  max-height: 3.6rem;
+  overflow: hidden;
+}
+
+
+article.bookmark .tags {
+  display: block;
+  margin-top: 0.5em;
+}
+
+article.bookmark .tags a,
+article.bookmark .tags a:visited {
+  color: #a51;
+}

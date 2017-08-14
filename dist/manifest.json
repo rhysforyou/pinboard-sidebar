@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "Pinboard Sidebar",
+  "version": "0.1",
+  "description": "Your pinboard.in bookmarks. in a sidebar",
+  "icons": {
+    "48": "icons/extension.png",
+    "96": "icons/extension@2x.png"
+  },
+  "permissions": ["*://api.pinboard.in/*", "storage"],
+  "sidebar_action": {
+    "default_title": "Pinboard",
+    "default_panel": "sidebar/panel.html",
+    "default_icon": "icons/sidebar.png",
+    "browser_style": true
+  },
+  "options_ui": {
+    "page": "options/options.html",
+    "browser_style": true
+  },
+  "applications": {
+    "gecko": {
+      "id": "pinboard-sidebar@extremely.online"
+    }
+  }
+}

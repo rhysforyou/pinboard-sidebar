@@ -1,0 +1,25 @@
+{
+  "name": "pinboard-neue",
+  "version": "0.1.0",
+  "description": "A Pinboard extension for Firefox",
+  "scripts": {
+    "build": "webpack",
+    "build:watch": "webpack --watch",
+    "start": "cd dist && web-ext run --start-url 'about:debugging'",
+    "start:nightly": "cd dist && web-ext run --firefox nightly --start-url 'about:debugging' --verbose"
+  },
+  "author": "Rhys Powell",
+  "license": "MIT",
+  "dependencies": {
+    "babel-polyfill": "^6.23.0",
+    "preact": "^8.2.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.6.0",
+    "web-ext": "^2.0.0",
+    "webpack": "^3.5.2"
+  }
+}
