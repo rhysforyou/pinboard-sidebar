@@ -31,7 +31,7 @@ export default class RecentBookmarks extends Component {
         <BookmarkList bookmarks={this.state.bookmarks} user={this.state.user} />
       );
     } else {
-      return <span>Loading…</span>;
+      return <div class="spinner" />;
     }
   }
 }
