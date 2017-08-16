@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Pinboard Neue",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "Pinboard's best friend for Firefox",
   "icons": {
     "48": "icons/extension.png",
@@ -11,20 +11,20 @@
   "sidebar_action": {
     "default_title": "Pinboard",
     "default_panel": "sidebar/panel.html",
-    "default_icon": "icons/sidebar.png",
+    "default_icon": {
+      "32": "icons/sidebar.svg",
+      "64": "icons/sidebar.svg"
+    },
     "browser_style": true
   },
-  "page_action": {
+  "browser_action": {
     "browser_style": true,
     "default_icon": {
-      "19": "icons/button.png",
-      "38": "icons/button@2x.png"
+      "19": "icons/button.svg",
+      "38": "icons/button.svg"
     },
     "default_title": "Add to Pinboard",
     "default_popup": "popup/popup.html"
-  },
-  "background": {
-    "scripts": ["background.js"]
   },
   "options_ui": {
     "page": "options/options.html",
